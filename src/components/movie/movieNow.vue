@@ -53,21 +53,21 @@ export default {
     })
   },
   async created() {
-    // if (sessionStorage.getItem("movieList") && this.cityone != this.cityId) {
-    //   console.log(this.cityone);
-    //   this.movieList = JSON.parse(sessionStorage.getItem("movieList"));
+    if (sessionStorage.getItem("movieList") && this.cityone != this.cityId) {
+      console.log(this.cityone);
+      this.movieList = JSON.parse(sessionStorage.getItem("movieList"));
 
-    //   this.cinemaFlag = false;
-    //   for (var i = 0; i < this.movieList.length; i++) {
-    //     let actors = this.movieList[i].actors;
-    //     let arr = "";
-    //     for (var j = 0; j < actors.length; j++) {
-    //       arr += actors[j].name + " ";
-    //     }
-    //     this.actors.push(arr);
-    //   }
-    //   this.cityone = this.cityId;
-    //} else {
+      this.cinemaFlag = false;
+      for (var i = 0; i < this.movieList.length; i++) {
+        let actors = this.movieList[i].actors;
+        let arr = "";
+        for (var j = 0; j < actors.length; j++) {
+          arr += actors[j].name + " ";
+        }
+        this.actors.push(arr);
+      }
+      this.cityone = this.cityId;
+    } else {
     let data = await getMovieNow(this.cityId);
     if (data) {
       this.cinemaFlag = false;
@@ -87,7 +87,7 @@ export default {
 
     console.log(this.cityone, 111);
     sessionStorage.setItem("movieList", JSON.stringify(data.data.films));
-    //}
+    }
   },
   data() {
     return {

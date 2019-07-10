@@ -52,7 +52,7 @@ export default {
       cityId: state => state.citylist.cityId
     })
   },
-  async created() {//ggggggggggggggggggg
+  async created() {
     if (sessionStorage.getItem("movieList") && this.cityone != this.cityId) {
       console.log(this.cityone);
       this.movieList = JSON.parse(sessionStorage.getItem("movieList"));

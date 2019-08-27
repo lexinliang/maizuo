@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import "common"
 Vue.config.productionTip = false
-
+console.log('123')
 Vue.prototype.timestampToTime = function (timestamp) {
   var date = new Date(timestamp * 1000);   //timestamp 为10位需*1000，timestamp 为13位的话不需乘1000
   var Y = date.getFullYear();

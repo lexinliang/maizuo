@@ -5,6 +5,7 @@ import store from './store'
  import Mint from 'mint-ui';
  import 'mint-ui/lib/style.css'
   Vue.use(Mint); 
+  console.log('23232')
 import "./common"
 Vue.config.productionTip = false
 Vue.prototype.timestampToTime = function (timestamp) {

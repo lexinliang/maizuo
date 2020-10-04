@@ -1,10 +1,7 @@
 
 
-                  name: Maizuo Test CI 
-
-on:
-  workflow_dispatch:
-
+name: Maizuo Test CI 
+on: [push] #在推送的时候运行此action
 jobs:
   # build dist and build docker image, then publish to Github Packages
   build_and_publish:

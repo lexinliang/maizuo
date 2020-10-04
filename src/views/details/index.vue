@@ -98,7 +98,7 @@
 </template>
 
 <script>
-import "swiper/dist/css/swiper.css";
+
 import Swiper from "swiper";
 import axios from "axios"
 import {getcinemasAress} from "api/cinemas"

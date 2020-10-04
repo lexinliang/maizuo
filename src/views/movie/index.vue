@@ -51,7 +51,6 @@
 // { var scrollTop = document.documentElement.scrollTop || document.body.scrollTop; 
 // if(scrollTop>210){  this.active = false ;console.log(this.active,active)  } },true)
 
-import "swiper/dist/css/swiper.css";
 import Swiper from "swiper";
 import movieBanner from "components/movie/movieBanner"
 import movieNow from "components/movie/movieNow"

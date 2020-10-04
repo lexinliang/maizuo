@@ -124,7 +124,7 @@
 
 
 <script>
-import "swiper/dist/css/swiper.css";
+
 import Swiper from "swiper";
 import {getmovess} from "api/cinemas"
 import {getdest} from "api/cinemas"
